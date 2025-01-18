@@ -1,0 +1,28 @@
+[project]
+name = "mcpx"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "TerminalMan", email = "84923604+SecretiveShell@users.noreply.github.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "loguru>=0.7.3",
+    "mcp>=1.2.0",
+    "pydantic>=2.10.5",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/SecretiveShell/mcpx"
+"Repository" = "https://github.com/SecretiveShell/mcpx"
+"Issues" = "https://github.com/SecretiveShell/mcpx/issues"
+
+[project.optional-dependencies]
+docker = [
+    "aiodocker>=0.24.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
