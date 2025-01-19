@@ -8,6 +8,8 @@ This package is aimed at client developers.
 
 - Docker client transport
 
+- SSE server transport
+
 ## Installation
 
 Install mcpx as a python package via pypi:

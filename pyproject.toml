@@ -22,6 +22,11 @@ dependencies = [
 docker = [
     "aiodocker>=0.24.0",
 ]
+sse-server = [
+    "anyio>=4.8.0",
+    "sse-starlette>=2.2.1",
+    "starlette>=0.45.2",
+]
 
 [build-system]
 requires = ["hatchling"]

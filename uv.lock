@@ -301,7 +301,7 @@ wheels = [
 
 [[package]]
 name = "mcpx"
-version = "0.1.0"
+version = "0.1.1"
 source = { editable = "." }
 dependencies = [
     { name = "loguru" },
@@ -313,13 +313,21 @@ dependencies = [
 docker = [
     { name = "aiodocker" },
 ]
+sse-server = [
+    { name = "anyio" },
+    { name = "sse-starlette" },
+    { name = "starlette" },
+]
 
 [package.metadata]
 requires-dist = [
     { name = "aiodocker", marker = "extra == 'docker'", specifier = ">=0.24.0" },
+    { name = "anyio", marker = "extra == 'sse-server'", specifier = ">=4.8.0" },
     { name = "loguru", specifier = ">=0.7.3" },
     { name = "mcp", specifier = ">=1.2.0" },
     { name = "pydantic", specifier = ">=2.10.5" },
+    { name = "sse-starlette", marker = "extra == 'sse-server'", specifier = ">=2.2.1" },
+    { name = "starlette", marker = "extra == 'sse-server'", specifier = ">=0.45.2" },
 ]
 
 [[package]]
